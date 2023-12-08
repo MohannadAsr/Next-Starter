@@ -8,9 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
   return (
     <>
-      <div dir={router.locale == 'ar' ? 'rtl' : 'ltr'}>
-        <Component {...pageProps} />
-      </div>
+      <Component dir={router.locale == 'ar' ? 'rtl' : 'ltr'} {...pageProps} />
     </>
   );
 }

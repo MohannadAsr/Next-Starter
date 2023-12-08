@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { getLocale } from '@/plugins/getLocale';
 import React from 'react';
-import DictType from '@/types/localiztion';
+import DictType from '@/types/localiztion'; // Localiztion Type made it manually using ChatGPT
 
 export default function Home({ dict }: { dict: DictType }) {
   const router = useRouter();
@@ -11,7 +11,7 @@ export default function Home({ dict }: { dict: DictType }) {
       className={`flex min-h-screen flex-col items-center justify-between p-24 `}
     >
       <div>
-        <h1 onClick={() => router.push('/Home/2500?hello=9000')}></h1>
+        <h1 onClick={() => router.push('/Home/2500?hello=9000')}>e</h1>
         Here we are {dict.product.home}
       </div>
     </main>
